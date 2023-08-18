@@ -62,14 +62,6 @@ function getForecast(coordinates) {
 }
 
 function displayTemperature(response) {
-  // we do console log to check whether or no our code is working
-  console.log(response);
-  // console.log(response.data.name);
-  // console.log(response.data.main.temp);
-  // console.log(response.data.weather[0].main);
-  // console.log(response.data.weather[0].description);
-  // console.log(response.data.main.humidity);
-  // console.log(response.data.wind.speed);
   let cityElement = document.querySelector("#city");
   let temperatureElement = document.querySelector("#temperature");
   let descriptionElement = document.querySelector("#description");
@@ -103,7 +95,6 @@ function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
-  // console.log(cityInputEleme\nt.value);
 }
 
 function displayFahrenheitTemperature(event) {
